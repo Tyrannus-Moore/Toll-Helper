@@ -1,0 +1,6 @@
+﻿# ZWFile下载客户端ICE配置信息
+Ice.ThreadPool.Client.SizeMax=5  # 并发最大线程大小
+Ice.MessageSizeMax=102400	# 单位kb
+#Ice.TCP.RcvSize=20480	# 单位kb
+#Ice.Override.ConnectTimeout=300 # 单位毫秒
+Ice.Override.Timeout=300000	# 单位毫秒

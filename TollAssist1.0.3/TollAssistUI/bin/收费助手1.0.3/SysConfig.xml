@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<SysConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <mCompanyCode>001成南高速</mCompanyCode>
+  <mPlazCode>001成南义和站</mPlazCode>
+  <mLanName>出口</mLanName>
+  <mLanNum>1</mLanNum>
+  <mLocalHostIPAddress>192.168.43.61</mLocalHostIPAddress>
+  <mServerIPAddress>10.51.80.2</mServerIPAddress>
+  <mTollFormTitel />
+  <mTollSoftPath>D:\work\收费助手\模拟.exe</mTollSoftPath>
+  <mPlatteControlID>264606</mPlatteControlID>
+  <mPlatteControlPos>
+    <X>222</X>
+    <Y>229</Y>
+  </mPlatteControlPos>
+  <mCarTypeControlID>721398</mCarTypeControlID>
+  <mCarTypeControlPos>
+    <X>270</X>
+    <Y>116</Y>
+  </mCarTypeControlPos>
+  <mTipsFontSize>30</mTipsFontSize>
+  <mTipsFormPos>
+    <X>697</X>
+    <Y>346</Y>
+  </mTipsFormPos>
+  <mResFormVisible>false</mResFormVisible>
+  <mWelcomeLogoVisible>false</mWelcomeLogoVisible>
+  <mOverloadTips>超载率：0.0%</mOverloadTips>
+  <mOverloadControlPos>
+    <X>442</X>
+    <Y>356</Y>
+  </mOverloadControlPos>
+  <mIQueryPlateServerIceProxy>QueryPlateServer:tcp -h 10.51.80.2 -p 12350</mIQueryPlateServerIceProxy>
+  <mIQueryPlateServerIceProxyProp>ice_props\Ice_QueryPlate_Proxy.props</mIQueryPlateServerIceProxyProp>
+  <mUpdateServerIceProxy>UpdateServer:tcp -h 10.51.80.2 -p 12360</mUpdateServerIceProxy>
+  <mUpdateServerIceServantProp>ice_props\Ice_UpdateServer_Proxy.props</mUpdateServerIceServantProp>
+  <mLocalSqliteDBName>TollAssist.db</mLocalSqliteDBName>
+  <mMonitorServerEndPoint>127.0.0.1:12370</mMonitorServerEndPoint>
+  <mEnableHeartBeat>true</mEnableHeartBeat>
+  <mHeartBeatIntervalOfSecond>5</mHeartBeatIntervalOfSecond>
+  <mAutoUploadCustomRecord>true</mAutoUploadCustomRecord>
+  <mAutoSyncStationTab>true</mAutoSyncStationTab>
+  <mUpdateWay>Auto</mUpdateWay>
+  <mCheckUpdateFrequency>20</mCheckUpdateFrequency>
+  <mCheckUpdateDateTime>8</mCheckUpdateDateTime>
+  <mUpdateFolderName>update</mUpdateFolderName>
+  <mPortName>COM7</mPortName>
+  <mbaudRate>9600</mbaudRate>
+  <mParity>None</mParity>
+  <mDataBits>8</mDataBits>
+  <mStopBits>One</mStopBits>
+  <mAlarmPublishServerUrl>ws://10.51.80.2:8080/highspeed/websocket</mAlarmPublishServerUrl>
+  <mAlarmInfoScrollFrequency>50</mAlarmInfoScrollFrequency>
+  <mCarInfoScrollFrequency>200</mCarInfoScrollFrequency>
+  <mCommonCarR>0</mCommonCarR>
+  <mCommonCarG>255</mCommonCarG>
+  <mCommonCarB>0</mCommonCarB>
+  <mSuspectCarR>255</mSuspectCarR>
+  <mSuspectCarG>0</mSuspectCarG>
+  <mSuspectCarB>0</mSuspectCarB>
+  <mInvalidCarR>192</mInvalidCarR>
+  <mInvalidCarG>192</mInvalidCarG>
+  <mInvalidCarB>192</mInvalidCarB>
+  <mUnblockedCarR>0</mUnblockedCarR>
+  <mUnblockedCarG>0</mUnblockedCarG>
+  <mUnblockedCarB>255</mUnblockedCarB>
+  <minformationFont>华文琥珀</minformationFont>
+  <fontOutline>4</fontOutline>
+  <otherApplacationName>HskDDNS</otherApplacationName>
+  <otherApplacationPath>C:\\this.txt</otherApplacationPath>
+  <refreshTime>5000</refreshTime>
+  <mStrRemark1 />
+  <mStrRemark2 />
+  <mStrRemark3 />
+  <mStrRemark4 />
+  <mStrRemark5 />
+  <mStrRemark6 />
+  <mStrRemark7 />
+  <mStrRemark8 />
+  <mStrRemark9 />
+  <mStrRemark10 />
+  <mIntRemark1>0</mIntRemark1>
+  <mIntRemark2>0</mIntRemark2>
+  <mIntRemark3>0</mIntRemark3>
+  <mIntRemark4>0</mIntRemark4>
+  <mLongRemark1>0</mLongRemark1>
+  <mLongRemark2>0</mLongRemark2>
+  <mLongRemark3>0</mLongRemark3>
+  <mLongRemark4>0</mLongRemark4>
+  <mBoolRemark1>false</mBoolRemark1>
+  <mBoolRemark2>false</mBoolRemark2>
+  <mBoolRemark3>false</mBoolRemark3>
+  <mBoolRemark4>false</mBoolRemark4>
+</SysConfig>

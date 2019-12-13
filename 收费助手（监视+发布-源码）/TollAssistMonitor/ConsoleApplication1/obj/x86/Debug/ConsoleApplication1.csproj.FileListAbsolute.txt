@@ -1,0 +1,5 @@
+D:\work\收费助手\TollAssistMonitor\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\work\收费助手\TollAssistMonitor\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\work\收费助手\TollAssistMonitor\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\work\收费助手\TollAssistMonitor\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+D:\work\收费助手\TollAssistMonitor\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

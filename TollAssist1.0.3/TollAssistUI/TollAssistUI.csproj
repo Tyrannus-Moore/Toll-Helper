@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDDEA8F9-6E8C-456C-8D99-76C151E5DF48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TollAssistUI</RootNamespace>
+    <AssemblyName>TollAssistUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ice, Version=3.4.2.0, Culture=neutral, PublicKeyToken=cdd571ade22f2f16, processorArchitecture=MSIL" />
+    <Reference Include="LOGCS">
+      <HintPath>..\..\TollAssitServer\lib\日志库\Debug\LOGCS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp">
+      <HintPath>..\..\TollAssitServer\lib\websocket\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmInfoRecvice.cs" />
+    <Compile Include="CustomRecordUploadThread.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOverloadWarn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOverloadWarn.Designer.cs">
+      <DependentUpon>FrmOverloadWarn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResourceMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResourceMonitor.designer.cs">
+      <DependentUpon>FrmResourceMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCFG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCFG.Designer.cs">
+      <DependentUpon>FrmCFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectBox.Designer.cs">
+      <DependentUpon>FrmSelectBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWelcome.Designer.cs">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SerialPortRecv.cs" />
+    <Compile Include="SoftwareUpdate.cs" />
+    <Compile Include="StationTableSyncThread.cs" />
+    <Compile Include="SysConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UCDescInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDescInfo.Designer.cs">
+      <DependentUpon>UCDescInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDrag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDrag.Designer.cs">
+      <DependentUpon>UCDrag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOverLoadSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOverLoadSet.Designer.cs">
+      <DependentUpon>UCOverLoadSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPlateNumberSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPlateNumberSet.Designer.cs">
+      <DependentUpon>UCPlateNumberSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSiteSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSiteSet.Designer.cs">
+      <DependentUpon>UCSiteSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTipInfoSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTipInfoSet.Designer.cs">
+      <DependentUpon>UCTipInfoSet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOverloadWarn.resx">
+      <DependentUpon>FrmOverloadWarn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResourceMonitor.resx">
+      <DependentUpon>FrmResourceMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCFG.resx">
+      <DependentUpon>FrmCFG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectBox.resx">
+      <DependentUpon>FrmSelectBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWelcome.resx">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDescInfo.resx">
+      <DependentUpon>UCDescInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDrag.resx">
+      <DependentUpon>UCDrag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOverLoadSet.resx">
+      <DependentUpon>UCOverLoadSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPlateNumberSet.resx">
+      <DependentUpon>UCPlateNumberSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSiteSet.resx">
+      <DependentUpon>UCSiteSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTipInfoSet.resx">
+      <DependentUpon>UCTipInfoSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\启动_修改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ycck%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TollAssitServer\TollAssistComm\TollAssistComm.csproj">
+      <Project>{81A3835F-690D-4E74-B5F0-A371AF70F3D7}</Project>
+      <Name>TollAssistComm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drag2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ylj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ydk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuk%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\SysConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\川高.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

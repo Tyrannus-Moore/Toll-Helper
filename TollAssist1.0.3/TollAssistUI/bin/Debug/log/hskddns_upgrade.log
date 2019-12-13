@@ -1,0 +1,4 @@
+[8184][12064]2018-03-20 10:59:03	= Debug =	[http_call] attempt to connect server: client.oray.net/upgrade/check
+[8184][12064]2018-03-20 10:59:03	= Debug =	[http_call] create new stream because alive streams is empty.
+[8184][12064]2018-03-20 10:59:03	- Info  -	[http_call] connect server: client.oray.net:443(61.152.96.115)
+[8184][12064]2018-03-20 10:59:03	* Error *	upgrade error, reason:no need to upgrade

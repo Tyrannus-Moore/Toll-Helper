@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<MonitorItemCollections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <mListenPort>12370</mListenPort>
+  <mMaxWaitCount>3</mMaxWaitCount>
+  <mMonitorItem />
+</MonitorItemCollections>
